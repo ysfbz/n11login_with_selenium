@@ -11,9 +11,9 @@ class LoginN11(unittest.TestCase):
 
 
     def test_n11_login(self):
-        self.driver.find_element_by_xpath("//*[@id='userKvkkModal']/div/div[2]/span").click()
+        self.driver.find_element_by_class_name("btnHolder").click()
         time.sleep(1)
-        self.driver.find_element_by_xpath("//*[@id='header']/div/div/div[2]/div[2]/div[2]/div/div/a[1]").click()
+        self.driver.find_element_by_class_name("btnSignIn").click()
         time.sleep(0)
         self.driver.find_element_by_name("email").send_keys("sendyour@email.com")
         self.driver.find_element_by_name("password").send_keys("yourpassword")
